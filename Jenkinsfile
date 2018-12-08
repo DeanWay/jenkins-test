@@ -11,5 +11,10 @@ pipeline {
                 sh 'python -c "print(1)"' 
             }
         }
+        stage('Test') {
+            steps {
+                sh 'echo "Testing!"'
+            }
+        }
     }
 }
